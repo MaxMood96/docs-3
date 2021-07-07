@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `ppc64le` builds of [the `ubuntu` official image](https://hub.docker.com/_/ubuntu) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,13 +26,15 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`18.04`, `bionic-20210615.1`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/bionic/Dockerfile)
--	[`20.04`, `focal-20210609`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/focal/Dockerfile)
--	[`20.10`, `groovy-20210614`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/groovy/Dockerfile)
--	[`21.04`, `hirsute-20210602`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/hirsute/Dockerfile)
--	[`21.10`, `impish-20210606`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/impish/Dockerfile)
--	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/trusty/Dockerfile)
--	[`16.04`, `xenial-20210611`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/1c090689a541a57452ae21cb76ef038b9f339fb2/xenial/Dockerfile)
+-	[`18.04`, `bionic-20210615.1`, `bionic`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/bionic/Dockerfile)
+-	[`20.04`, `focal-20210609`, `focal`, `latest`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/focal/Dockerfile)
+-	[`20.10`, `groovy-20210614`, `groovy`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/groovy/Dockerfile)
+-	[`21.04`, `hirsute-20210602`, `hirsute`, `rolling`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/hirsute/Dockerfile)
+-	[`21.10`, `impish-20210606`, `impish`, `devel`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/impish/Dockerfile)
+-	[`14.04`, `trusty-20191217`, `trusty`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/trusty/Dockerfile)
+-	[`16.04`, `xenial-20210611`, `xenial`](https://github.com/tianon/docker-brew-ubuntu-core/blob/44f517c0b9e9f22a8695c9681824dd371f828188/xenial/Dockerfile)
+
+[![ppc64le/ubuntu build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ubuntu.svg?label=ppc64le/ubuntu%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/ppc64le/job/ubuntu/)
 
 # Quick reference (cont.)
 
@@ -65,9 +69,9 @@ Development of Ubuntu is led by Canonical Ltd. Canonical generates revenue throu
 
 This image is built from official rootfs tarballs provided by Canonical (specifically, https://partner-images.canonical.com/core/).
 
-The `ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ubuntu:rolling` tag points to the latest release (regardless of LTS status).
+The `ppc64le/ubuntu:latest` tag points to the "latest LTS", since that's the version recommended for general use. The `ppc64le/ubuntu:rolling` tag points to the latest release (regardless of LTS status).
 
-Along a similar vein, the `ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
+Along a similar vein, the `ppc64le/ubuntu:devel` tag is an alias for whichever release the "devel" suite on the mirrors currently points to, as determined by the following one-liner: `wget -qO- http://archive.ubuntu.com/ubuntu/dists/devel/Release | awk -F ': ' '$1 == "Codename" { print $2; exit }'`
 
 ## Locales
 
