@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `s390x` builds of [the `photon` official image](https://hub.docker.com/_/photon) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -24,10 +26,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`4.0`, `4.0-20210625`, `latest`](https://github.com/vmware/photon-docker-image/blob/3a29811633fd96c611a34d1aa5bcea768a40106c/docker/Dockerfile)
--	[`3.0`, `3.0-20210625`](https://github.com/vmware/photon-docker-image/blob/085cbe97761ca9814f7885a19d1d820d9a806cfa/docker/Dockerfile)
--	[`1.0`, `1.0-20210625`](https://github.com/vmware/photon-docker-image/blob/9930a98518db6bffa684cfa7a054324f2a1d277e/docker/Dockerfile)
--	[`2.0`, `2.0-20210625`](https://github.com/vmware/photon-docker-image/blob/3fe7c26264028947681b5f8f05e30bc3858fc90c/docker/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `s390x` ARCHITECTURE
+
+[![s390x/photon build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/s390x/job/photon.svg?label=s390x/photon%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/s390x/job/photon/)
 
 # Quick reference (cont.)
 
@@ -60,7 +61,7 @@ See the [FAQ](http://vmware.github.io/photon/assets/files/photon_faqs.pdf) for m
 
 ## How to use these images
 
-Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM photon:1.0GA`.
+Photon OS images are intended for use in the **FROM** field of an application's `Dockerfile`. For example, to use VMware Photon 1.0GA as the base of an image, specify `FROM s390x/photon:1.0GA`.
 
 ## Support
 
