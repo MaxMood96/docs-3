@@ -14,6 +14,8 @@ WARNING:
 
 -->
 
+**Note:** this is the "per-architecture" repository for the `mips64le` builds of [the `wordpress` official image](https://hub.docker.com/_/wordpress) -- for more information, see ["Architectures other than amd64?" in the official images documentation](https://github.com/docker-library/official-images#architectures-other-than-amd64) and ["An image's source changed in Git, now what?" in the official images FAQ](https://github.com/docker-library/faq#an-images-source-changed-in-git-now-what).
+
 # Quick reference
 
 -	**Maintained by**:  
@@ -26,25 +28,18 @@ WARNING:
 
 -	[`5.7.2-apache`, `5.7-apache`, `5-apache`, `apache`, `5.7.2`, `5.7`, `5`, `latest`, `5.7.2-php7.4-apache`, `5.7-php7.4-apache`, `5-php7.4-apache`, `php7.4-apache`, `5.7.2-php7.4`, `5.7-php7.4`, `5-php7.4`, `php7.4`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.4/apache/Dockerfile)
 -	[`5.7.2-fpm`, `5.7-fpm`, `5-fpm`, `fpm`, `5.7.2-php7.4-fpm`, `5.7-php7.4-fpm`, `5-php7.4-fpm`, `php7.4-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.4/fpm/Dockerfile)
--	[`5.7.2-fpm-alpine`, `5.7-fpm-alpine`, `5-fpm-alpine`, `fpm-alpine`, `5.7.2-php7.4-fpm-alpine`, `5.7-php7.4-fpm-alpine`, `5-php7.4-fpm-alpine`, `php7.4-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.4/fpm-alpine/Dockerfile)
 -	[`5.7.2-php7.3-apache`, `5.7-php7.3-apache`, `5-php7.3-apache`, `php7.3-apache`, `5.7.2-php7.3`, `5.7-php7.3`, `5-php7.3`, `php7.3`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.3/apache/Dockerfile)
 -	[`5.7.2-php7.3-fpm`, `5.7-php7.3-fpm`, `5-php7.3-fpm`, `php7.3-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.3/fpm/Dockerfile)
--	[`5.7.2-php7.3-fpm-alpine`, `5.7-php7.3-fpm-alpine`, `5-php7.3-fpm-alpine`, `php7.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php7.3/fpm-alpine/Dockerfile)
 -	[`5.7.2-php8.0-apache`, `5.7-php8.0-apache`, `5-php8.0-apache`, `php8.0-apache`, `5.7.2-php8.0`, `5.7-php8.0`, `5-php8.0`, `php8.0`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php8.0/apache/Dockerfile)
 -	[`5.7.2-php8.0-fpm`, `5.7-php8.0-fpm`, `5-php8.0-fpm`, `php8.0-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php8.0/fpm/Dockerfile)
--	[`5.7.2-php8.0-fpm-alpine`, `5.7-php8.0-fpm-alpine`, `5-php8.0-fpm-alpine`, `php8.0-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/latest/php8.0/fpm-alpine/Dockerfile)
--	[`cli-2.5.0`, `cli-2.5`, `cli-2`, `cli`, `cli-2.5.0-php7.4`, `cli-2.5-php7.4`, `cli-2-php7.4`, `cli-php7.4`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/cli/php7.4/alpine/Dockerfile)
--	[`cli-2.5.0-php7.3`, `cli-2.5-php7.3`, `cli-2-php7.3`, `cli-php7.3`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/cli/php7.3/alpine/Dockerfile)
--	[`cli-2.5.0-php8.0`, `cli-2.5-php8.0`, `cli-2-php8.0`, `cli-php8.0`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/cli/php8.0/alpine/Dockerfile)
 -	[`beta-5.8-RC1-apache`, `beta-5.8-apache`, `beta-5-apache`, `beta-apache`, `beta-5.8-RC1`, `beta-5.8`, `beta-5`, `beta`, `beta-5.8-RC1-php7.4-apache`, `beta-5.8-php7.4-apache`, `beta-5-php7.4-apache`, `beta-php7.4-apache`, `beta-5.8-RC1-php7.4`, `beta-5.8-php7.4`, `beta-5-php7.4`, `beta-php7.4`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.4/apache/Dockerfile)
 -	[`beta-5.8-RC1-fpm`, `beta-5.8-fpm`, `beta-5-fpm`, `beta-fpm`, `beta-5.8-RC1-php7.4-fpm`, `beta-5.8-php7.4-fpm`, `beta-5-php7.4-fpm`, `beta-php7.4-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.4/fpm/Dockerfile)
--	[`beta-5.8-RC1-fpm-alpine`, `beta-5.8-fpm-alpine`, `beta-5-fpm-alpine`, `beta-fpm-alpine`, `beta-5.8-RC1-php7.4-fpm-alpine`, `beta-5.8-php7.4-fpm-alpine`, `beta-5-php7.4-fpm-alpine`, `beta-php7.4-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.4/fpm-alpine/Dockerfile)
 -	[`beta-5.8-RC1-php7.3-apache`, `beta-5.8-php7.3-apache`, `beta-5-php7.3-apache`, `beta-php7.3-apache`, `beta-5.8-RC1-php7.3`, `beta-5.8-php7.3`, `beta-5-php7.3`, `beta-php7.3`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.3/apache/Dockerfile)
 -	[`beta-5.8-RC1-php7.3-fpm`, `beta-5.8-php7.3-fpm`, `beta-5-php7.3-fpm`, `beta-php7.3-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.3/fpm/Dockerfile)
--	[`beta-5.8-RC1-php7.3-fpm-alpine`, `beta-5.8-php7.3-fpm-alpine`, `beta-5-php7.3-fpm-alpine`, `beta-php7.3-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php7.3/fpm-alpine/Dockerfile)
 -	[`beta-5.8-RC1-php8.0-apache`, `beta-5.8-php8.0-apache`, `beta-5-php8.0-apache`, `beta-php8.0-apache`, `beta-5.8-RC1-php8.0`, `beta-5.8-php8.0`, `beta-5-php8.0`, `beta-php8.0`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php8.0/apache/Dockerfile)
 -	[`beta-5.8-RC1-php8.0-fpm`, `beta-5.8-php8.0-fpm`, `beta-5-php8.0-fpm`, `beta-php8.0-fpm`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php8.0/fpm/Dockerfile)
--	[`beta-5.8-RC1-php8.0-fpm-alpine`, `beta-5.8-php8.0-fpm-alpine`, `beta-5-php8.0-fpm-alpine`, `beta-php8.0-fpm-alpine`](https://github.com/docker-library/wordpress/blob/cdb836237e3af7bfd011957316f159c1e81bf29c/beta/php8.0/fpm-alpine/Dockerfile)
+
+[![mips64le/wordpress build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/wordpress.svg?label=mips64le/wordpress%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/mips64le/job/wordpress/)
 
 # Quick reference (cont.)
 
@@ -76,7 +71,7 @@ WordPress is a free and open source blogging tool and a content management syste
 # How to use this image
 
 ```console
-$ docker run --name some-wordpress --network some-network -d wordpress
+$ docker run --name some-wordpress --network some-network -d mips64le/wordpress
 ```
 
 The following environment variables are also honored for configuring your WordPress instance:
@@ -95,7 +90,7 @@ The `WORDPRESS_DB_NAME` needs to already exist on the given MySQL server; it wil
 If you'd like to be able to access the instance from the host without the container's IP, standard port mappings can be used:
 
 ```console
-$ docker run --name some-wordpress -p 8080:80 -d wordpress
+$ docker run --name some-wordpress -p 8080:80 -d mips64le/wordpress
 ```
 
 Then, access it via `http://localhost:8080` or `http://host-ip:8080` in a browser.
@@ -104,7 +99,7 @@ If you'd like to use an external database instead of a `mysql` container, specif
 
 ```console
 $ docker run --name some-wordpress -e WORDPRESS_DB_HOST=10.1.2.3:3306 \
-    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d wordpress
+    -e WORDPRESS_DB_USER=... -e WORDPRESS_DB_PASSWORD=... -d mips64le/wordpress
 ```
 
 When running WordPress with TLS behind a reverse proxy such as NGINX which is responsible for doing TLS termination, be sure to set `X-Forwarded-Proto` appropriately (see ["Using a Reverse Proxy" in "Administration Over SSL" in upstream's documentation](https://wordpress.org/support/article/administration-over-ssl/#using-a-reverse-proxy)). No additional environment variables or configuration should be necessary (this image automatically adds the noted `HTTP_X_FORWARDED_PROTO` code to `wp-config.php` if *any* of the above-noted environment variables are specified).
@@ -116,7 +111,7 @@ If your database requires SSL, [WordPress ticket #28625](https://core.trac.wordp
 As an alternative to passing sensitive information via environment variables, `_FILE` may be appended to the previously listed environment variables, causing the initialization script to load the values for those variables from files present in the container. In particular, this can be used to load passwords from Docker secrets stored in `/run/secrets/<secret_name>` files. For example:
 
 ```console
-$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d wordpress:tag
+$ docker run --name some-wordpress -e WORDPRESS_DB_PASSWORD_FILE=/run/secrets/mysql-root ... -d mips64le/wordpress:tag
 ```
 
 Currently, this is supported for `WORDPRESS_DB_HOST`, `WORDPRESS_DB_USER`, `WORDPRESS_DB_PASSWORD`, `WORDPRESS_DB_NAME`, `WORDPRESS_AUTH_KEY`, `WORDPRESS_SECURE_AUTH_KEY`, `WORDPRESS_LOGGED_IN_KEY`, `WORDPRESS_NONCE_KEY`, `WORDPRESS_AUTH_SALT`, `WORDPRESS_SECURE_AUTH_SALT`, `WORDPRESS_LOGGED_IN_SALT`, `WORDPRESS_NONCE_SALT`, `WORDPRESS_TABLE_PREFIX`, and `WORDPRESS_DEBUG`.
@@ -184,7 +179,7 @@ Mount the volume containing your themes or plugins to the proper directory; and 
 
 See [the "Running as an arbitrary user" section of the `php` image documentation](https://hub.docker.com/_/php/).
 
-When running WP-CLI via the `cli` variants of this image, it is important to note that they're based on Alpine, and have a default `USER` of Alpine's `www-data`, whose UID is `82` (compared to the Debian-based WordPress variants whose default effective UID is `33`), so when running `wordpress:cli` against an existing Debian-based WordPress install, something like `--user 33:33` is likely going to be necessary (possibly also something like `-e HOME=/tmp` depending on the `wp` command invoked and whether it tries to use `~/.wp-cli`). See [docker-library/wordpress#256](https://github.com/docker-library/wordpress/issues/256) for more discussion around this.
+When running WP-CLI via the `cli` variants of this image, it is important to note that they're based on Alpine, and have a default `USER` of Alpine's `www-data`, whose UID is `82` (compared to the Debian-based WordPress variants whose default effective UID is `33`), so when running `mips64le/wordpress:cli` against an existing Debian-based WordPress install, something like `--user 33:33` is likely going to be necessary (possibly also something like `-e HOME=/tmp` depending on the `wp` command invoked and whether it tries to use `~/.wp-cli`). See [docker-library/wordpress#256](https://github.com/docker-library/wordpress/issues/256) for more discussion around this.
 
 ## Configuring PHP directives
 
@@ -194,13 +189,13 @@ For example, to adjust common `php.ini` flags like `upload_max_filesize`, you co
 
 # Image Variants
 
-The `wordpress` images come in many flavors, each designed for a specific use case.
+The `mips64le/wordpress` images come in many flavors, each designed for a specific use case.
 
-## `wordpress:<version>`
+## `mips64le/wordpress:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `wordpress:<version>-fpm`
+## `mips64le/wordpress:<version>-fpm`
 
 This variant contains PHP-FPM, which is a FastCGI implementation for PHP. See [the PHP-FPM website](https://php-fpm.org/) for more information about PHP-FPM.
 
@@ -213,26 +208,6 @@ Some potentially helpful resources:
 -	[very detailed article by Pascal Landau](https://www.pascallandau.com/blog/php-php-fpm-and-nginx-on-docker-in-windows-10/)
 -	[Stack Overflow discussion](https://stackoverflow.com/q/29905953/433558)
 -	[Apache httpd Wiki example](https://wiki.apache.org/httpd/PHPFPMWordpress)
-
-## `wordpress:cli`
-
-This image variant does not contain WordPress itself, but instead contains [WP-CLI](https://wp-cli.org).
-
-The simplest way to use it with an existing WordPress container would be something similar to the following:
-
-```console
-$ docker run -it --rm \
-	--volumes-from some-wordpress \
-	--network container:some-wordpress \
-	-e WORDPRESS_DB_USER=... \
-	-e WORDPRESS_DB_PASSWORD=... \
-	# [and other used environment variables]
-	wordpress:cli user list
-```
-
-Generally speaking, for WP-CLI to interact with a WordPress install, it needs access to the on-disk files of the WordPress install, and access to the database (and the easiest way to accomplish that such that `wp-config.php` does not require changes is to simply join the networking context of the existing and presumably working WordPress container, but there are many other ways to accomplish that which will be left as an exercise for the reader).
-
-**NOTE:** Since March 2021, WordPress images use a customized `wp-config.php` that pulls the values directly from the environment variables defined above (see `wp-config-docker.php` in [docker-library/wordpress#572](https://github.com/docker-library/wordpress/pull/572) and [docker-library/wordpress#577](https://github.com/docker-library/wordpress/pull/577)). As a result of reading environment variables directly, the cli container also needs the same set of environment variables to properly evaluate `wp-config.php`.
 
 # License
 
