@@ -1,4 +1,4 @@
-FROM perl:5.30-buster
+FROM perl:5.34.3-buster
 
 RUN set -eux; \
 	apt-get update; \
