@@ -1,4 +1,4 @@
-FROM perl:5.39-bookworm
+FROM perl:devel
 
 RUN set -eux; \
 	apt-get update; \
